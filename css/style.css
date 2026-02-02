@@ -1,0 +1,121 @@
+body {
+  margin: 0;
+}
+
+/****************   Nav Section **********************/
+nav {
+  display: flex;
+  justify-content: space-between;
+  gap: 5px;
+  background-color: crimson;
+  font: optional;
+}
+
+/***********************  Footer Section   **************************/
+footer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: rgba(153, 0, 0, 0.85);
+  font: optional;
+}
+
+/*********** Splash Page ************************/
+header {
+  font-weight: 700;
+  text-decoration: underline;
+
+}
+
+header h1 {
+  font-family: "Montserrat", sans-serif;
+  color: crimson;
+}
+
+header img {
+  border-style: dashed;
+  border-radius: 0%;
+}
+
+.address {
+  text-decoration: underline;
+}
+
+.tagline {
+  color: crimson;
+}
+
+/************* Sections ********************/
+hr {}
+
+section h3 {
+
+  font-family: "Montserrat", sans-serif;
+  color: crimson;
+}
+
+section dl {
+  display: grid;
+}
+
+section ul {
+  text-decoration: underline;
+}
+
+section a {
+  color: crimson;
+  text-decoration: none;
+}
+
+section a:hover {
+  text-decoration: underline;
+}
+
+/**************   Projects   *****************/
+.three-col {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 2px;
+  
+}
+
+.card img {
+   
+  display: block;
+  box-shadow: 0 6px 16px rgba(0, 0, 0, 0.25);
+}
+
+.card {
+  border: 1px solid #e6e6e6;
+  font-family: "Montserrat", sans-serif;
+  color:crimson;
+  width: 100%;
+  gap: 16px;
+  background: white;
+}
+
+/**************   Responsiveness   *****************/
+@media (max-width: 680px) {
+  nav {
+    flex-direction: column;
+  }
+
+  .three-col {
+    grid-template-columns: 1fr;
+  }
+}
+
+/**************   Contact Page   *****************/
+.one-col {
+  display:grid;
+  grid-template-columns: 1fr;
+}
+
+input {
+  color: crimson;
+  border-color: rgba(200, 20, 60, 0.75);
+}
+
+textarea {
+  box-shadow: 0 6px 16px rgba(0, 0, 0, 0.25);
+}
